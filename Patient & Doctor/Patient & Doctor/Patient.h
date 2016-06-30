@@ -19,12 +19,11 @@
 @property NSInteger age;
 @property NSString* name;
 @property bool hasHealthCard;
-@property NSString *symptoms;
+@property NSSet*symptoms;
 
 // Methdods of the patient
 
--(instancetype)initWithName:(NSString *)name age:(NSInteger)age andSymptoms:(NSString *)symptoms;
-
+-(instancetype)initWithName:(NSString *)name age:(NSInteger)age symptoms:(NSSet *)sympotoms healthCard:(bool)healthcard;
 
 -(void)visit:(Doctor *)doctor;
 

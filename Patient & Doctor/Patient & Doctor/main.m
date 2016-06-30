@@ -20,10 +20,10 @@ int main(int argc, const char * argv[]) {
 
 //        
 //        [patient visit:doc];
+        NSSet *symptomsSet = [NSSet setWithObjects:@"Erectile Dysfunction", @"Penis Pain", nil];
+        Patient *dumbestPatient = [[Patient alloc]initWithName:@"Jory Brazzoni" age:16 symptoms:symptomsSet  healthCard:false];
         
-        Patient *dumbestPatient = [[Patient alloc]initWithName:@"Jory Brazzoni" age:16 andSymptoms:@"Erectile Dysfunction"];
-        
-        Doctor *bestDoctor = [[Doctor alloc]initWithName:@"Martin" specialization:@"Everything" medications:@{@"Avanafil (Stendra)":@"Cures Erectile Dysfunction and approved by the FDA"}];
+        Doctor *bestDoctor = [[Doctor alloc]initWithName:@"Martin" specialization:@"Everything" medications:@{@"Erectile Dysfunction":@"Avanafil (Stendra)"}];
         
         
         [dumbestPatient visit:bestDoctor];

@@ -24,28 +24,27 @@
     return self;
 }
 
--(instancetype)initWithName:(NSString *)N specialization:(NSString *)S medications:(NSDictionary*)M andAcceptedPatients:(NSMutableArray*)A {
 
-    return self;
-
-}
 
 -(void)accept:(Patient *)patient {
-    if (patient.hasHealthCard) {
+    if (patient.hasHealthCard == true && ![self.acceptedPatients containsObject:@"patient.name"]) {
         [self.acceptedPatients addObject:patient];
+        NSLog(@"The patient was accepted.");
     } else {
-        
+        NSLog(@"The patient was not accepted due to the absence of a valid health card");
     }
 }
 
 -(void)requestMeds:(Patient *)patient {
 
-    if ([self.acceptedPatients containsObject:@"patient.name"]) {
-    
-        
-    
+    for (NSString *symptom in patient.symptoms) {
+        if ([[self.medications allKeys] containsObject:symptom]) {
+            NSLog(@"You should take %@ for your %@", [self.medications objectForKey:symptom], symptom);
+        }
+        else {
+            NSLog(@"I don't know what to prescribe for your %@", symptom);
+        }
     }
-
 }
 
 

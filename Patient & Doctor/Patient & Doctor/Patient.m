@@ -11,10 +11,11 @@
 @implementation Patient
 
 -(void)visit:(Doctor *)doctor {
+    NSLog(@"Patient just visited the doctor.");
     [doctor accept:self];
 }
 
--(instancetype)initWithName:(NSString *)name age:(NSInteger)age andSymptoms:(NSString *)sympotoms {
+-(instancetype)initWithName:(NSString *)name age:(NSInteger)age symptoms:(NSSet *)sympotoms healthCard:(bool)healthcard {
 
     self = [super init];
     
