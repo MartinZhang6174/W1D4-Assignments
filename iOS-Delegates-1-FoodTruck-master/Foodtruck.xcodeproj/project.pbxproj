@@ -10,6 +10,7 @@
 		8BF87F6E1CDB2B21001943DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF87F6D1CDB2B21001943DE /* main.m */; };
 		8BF87F761CDB2B34001943DE /* FoodTruck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF87F751CDB2B34001943DE /* FoodTruck.m */; };
 		9CA381BB1D25FEA400BF259A /* Cook.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381BA1D25FEA400BF259A /* Cook.m */; };
+		9CA381C11D2618D600BF259A /* Baker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381C01D2618D600BF259A /* Baker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		8BF87F751CDB2B34001943DE /* FoodTruck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodTruck.m; sourceTree = "<group>"; };
 		9CA381B91D25FEA400BF259A /* Cook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cook.h; sourceTree = "<group>"; };
 		9CA381BA1D25FEA400BF259A /* Cook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cook.m; sourceTree = "<group>"; };
+		9CA381BF1D2618D600BF259A /* Baker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Baker.h; path = ../Baker.h; sourceTree = "<group>"; };
+		9CA381C01D2618D600BF259A /* Baker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Baker.m; path = ../Baker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				8BF87F6D1CDB2B21001943DE /* main.m */,
-				9CA381B91D25FEA400BF259A /* Cook.h */,
-				9CA381BA1D25FEA400BF259A /* Cook.m */,
 				8BF87F741CDB2B34001943DE /* FoodTruck.h */,
 				8BF87F751CDB2B34001943DE /* FoodTruck.m */,
+				9CA381BF1D2618D600BF259A /* Baker.h */,
+				9CA381C01D2618D600BF259A /* Baker.m */,
+				9CA381B91D25FEA400BF259A /* Cook.h */,
+				9CA381BA1D25FEA400BF259A /* Cook.m */,
 			);
 			path = Foodtruck;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				8BF87F6E1CDB2B21001943DE /* main.m in Sources */,
 				8BF87F761CDB2B34001943DE /* FoodTruck.m in Sources */,
 				9CA381BB1D25FEA400BF259A /* Cook.m in Sources */,
+				9CA381C11D2618D600BF259A /* Baker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

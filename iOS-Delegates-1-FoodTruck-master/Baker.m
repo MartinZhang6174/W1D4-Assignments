@@ -1,17 +1,17 @@
 //
-//  Cook.m
+//  Baker.m
 //  Foodtruck
 //
 //  Created by Martin Zhang on 2016-06-30.
 //  Copyright © 2016 Lighthouse Labs. All rights reserved.
 //
 
-#import "Cook.h"
+#import "Baker.h"
 
-@implementation Cook
+@implementation Baker
 
 -(double)foodTruck:(FoodTruck *)truck priceForFood:(NSString *)food {
-    return 5;
+    return 0.99;
 }
 
 @end
