@@ -10,9 +10,24 @@
 
 @implementation Kitchen
 
-/*- (Pizza *)makePizzaWithSize:(PizzaSize)size toppings:(NSArray *)toppings
+- (Pizza *)makePizzaWithSize:(pizzaSize)size toppings:(NSMutableArray *)toppings
 {
-    
-}*/
+    NSString *sizeString;
+    switch (size) {
+        case 1:
+            sizeString = @"small";
+            break;
+        case 2:
+            sizeString = @"medium";
+            break;
+        case 3:
+            sizeString = @"large";
+            break;
+        default:
+            break;
+    }
+    NSLog(@"Your %@ %@ pizza is ready!", sizeString, toppings);
+    return [[Pizza alloc] initWithSize:size andToppings:toppings];
+}
 
 @end
