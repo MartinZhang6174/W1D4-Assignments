@@ -10,7 +10,7 @@
 		9CA381A81D259D9900BF259A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381A71D259D9900BF259A /* main.m */; };
 		9CA381B01D259E5C00BF259A /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381AF1D259E5C00BF259A /* Patient.m */; };
 		9CA381B31D259E6500BF259A /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381B21D259E6500BF259A /* Doctor.m */; };
-		9CA381B51D25DA5E00BF259A /* Health Care Information Storage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381B41D25DA5E00BF259A /* Health Care Information Storage.m */; };
+		9CA381B81D25EB1A00BF259A /* HealthRecords.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA381B71D25EB1A00BF259A /* HealthRecords.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +32,8 @@
 		9CA381AF1D259E5C00BF259A /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
 		9CA381B11D259E6500BF259A /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
 		9CA381B21D259E6500BF259A /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
-		9CA381B41D25DA5E00BF259A /* Health Care Information Storage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Health Care Information Storage.m"; sourceTree = "<group>"; };
+		9CA381B61D25EB1A00BF259A /* HealthRecords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HealthRecords.h; path = ../HealthRecords.h; sourceTree = "<group>"; };
+		9CA381B71D25EB1A00BF259A /* HealthRecords.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HealthRecords.m; path = ../HealthRecords.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +71,8 @@
 				9CA381AF1D259E5C00BF259A /* Patient.m */,
 				9CA381B11D259E6500BF259A /* Doctor.h */,
 				9CA381B21D259E6500BF259A /* Doctor.m */,
-				9CA381B41D25DA5E00BF259A /* Health Care Information Storage.m */,
+				9CA381B61D25EB1A00BF259A /* HealthRecords.h */,
+				9CA381B71D25EB1A00BF259A /* HealthRecords.m */,
 			);
 			path = "Patient & Doctor";
 			sourceTree = "<group>";
@@ -131,9 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA381B51D25DA5E00BF259A /* Health Care Information Storage.m in Sources */,
 				9CA381A81D259D9900BF259A /* main.m in Sources */,
 				9CA381B01D259E5C00BF259A /* Patient.m in Sources */,
+				9CA381B81D25EB1A00BF259A /* HealthRecords.m in Sources */,
 				9CA381B31D259E6500BF259A /* Doctor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

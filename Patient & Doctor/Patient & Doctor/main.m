@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Patient.h"
 #import "Doctor.h"
+#import "HealthRecords.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -25,10 +26,10 @@ int main(int argc, const char * argv[]) {
         
         Doctor *bestDoctor = [[Doctor alloc]initWithName:@"Martin" specialization:@"Everything" medications:@{@"Erectile Dysfunction":@"Avanafil (Stendra)"}];
         
+        HealthRecords *healthRecords = [[HealthRecords alloc] init];
+        [healthRecords updateMedRecordsWithDoctor:bestDoctor andPatient:dumbestPatient];
         
         [dumbestPatient visit:bestDoctor];
-        
-        [bestDoctor requestMeds:dumbestPatient];
         
     }
     return 0;

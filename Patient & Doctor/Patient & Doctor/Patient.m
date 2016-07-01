@@ -24,6 +24,7 @@
         self.name = name;
         self.age = age;
         self.symptoms = sympotoms;
+        self.hasHealthCard = healthcard;
     
     }
     
