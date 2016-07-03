@@ -12,9 +12,11 @@
 
 -(void)printText:(NSString *)text {
 
-
 //    [self.delegate printer:self numberOfTimesToPrint:5];
-    NSLog(@"");
+    NSInteger targetResult = [self.delegate printer:self numberOfTimesToPrint:text];
+    for (int i = 0; i < targetResult; i++) {
+        NSLog(@"%@",text);
+    }
 
 }
 -(void) unstuck {
